@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="autocomplete" content="off"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-touch-fullscreen" content="YES"/>
+    <meta name="format-detection" content="telephone=no"/>
+
+    <title>03_1 문의하기</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
+    <link href="./css/m_common.css" rel="stylesheet" />
+    <link href="./css/m_landscape.css" rel="stylesheet" media="all and (orientation:landscape)" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script src="./js/summernote-table.js"></script>
+    <script src="./js/m_main.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>모바일 고객센터</strong>
+      <p>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화하였습니다.</p>
+    </noscript>
+
+    <!-- mWrap -->
+    <div id="mWrap">
+      <h1><span class="sr_only">모바일 고객센터</span></h1>
+      <!-- m.header_type2 > 이전, 닫기 버튼 있는 상태 -->
+      <header id="mHeader" class="m_header_type2">
+        <div class="inner_p">
+          <a href="#none" class="link_back">
+            <span class="ico_arr_l ico_comm"></span>
+            <span class="sr_only">이전 페이지</span>
+          </a>
+          <h2><span class="tit_maintit">문의하기</span></h2>
+          <a href="01_1_0_main.html" class="link_home">
+            <span class="ico_menu ico_comm"></span>
+            <span class="sr_only">홈으로 이동</span>
+          </a>
+        </div>
+      </header>
+      <main id="mMain" class="m_main">
+        <h2><span class="sr_only">고객센터 메인페이지</span></h2>
+        <div class="inner_p">
+          <div class="list_customer">
+            <div class="m_input_type2">
+              <select
+                class="select_option select_option1"
+                name="문의유형 분류"
+                title="문의유형 분류"
+              >
+                <option value="null">選擇項目</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="m_input_type2">
+              <select
+                class="select_option select_option2"
+                name="문의유형 분류"
+                title="문의유형 분류"
+              >
+                <option value="null">選擇類型</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="m_input_type2">
+              <input
+                type="text"
+                class="input_txt_type1"
+                placeholder="문의 제목 입력(20자 이내)"
+                title="제목 입력"
+                maxlength="20"
+              />
+            </div>
+            <div class="m_input_type3">
+              <textarea
+                class="input_txt_type2"
+                title="내용 입력"
+                placeholder="문의 내용을 입력해주세요(500자 이내)."
+                maxlength="500"
+              ></textarea>
+            </div>
+            <p class="txt_count">&lpar;1&sol;500&rpar;</p>
+            <div class="wrap_upload">
+              <ul class="list_upload">
+                <li>
+                  <!-- 파일 등록 전 -->
+                  <p class="txt_common txt_g5">
+                    <span>등록한 파일명.파일명</span>
+                  </p>
+                  <!-- // 파일 등록 전 -->
+                </li>
+                <li>
+                  <!-- 파일 등록 후 -->
+                  <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p>
+                  <button type="button" class="btn_delete" onclick="">
+                    <span class="ico_delete ico_comm"></span>
+                    <span class="sr_only">삭제</span>
+                  </button>
+                  <!-- // 파일 등록 후 -->
+                </li>
+                <li>
+                  <!-- 파일 등록 후 -->
+                  <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p>
+                  <button type="button" class="btn_delete" onclick="">
+                    <span class="ico_delete ico_comm"></span>
+                    <span class="sr_only">삭제</span>
+                  </button>
+                  <!-- // 파일 등록 후 -->
+                </li>
+                <li>
+                  <!-- 파일 등록 후 -->
+                  <p class="txt_common txt_g5 upload"><span>등록.jpg</span></p>
+                  <button type="button" class="btn_delete" onclick="">
+                    <span class="ico_delete ico_comm"></span>
+                    <span class="sr_only">삭제</span>
+                  </button>
+                  <!-- // 파일 등록 후 -->
+                </li>
+              </ul>
+              <div class="wrap_file">
+                <a href="#none" class="btn_upload">
+                  <span class="ico_upload ico_comm"></span>
+                  <span class="sr_only">파일 업로드 버튼</span>
+                </a>
+              </div>
+              <p class="txt_common txt_g5">
+                5M 미만의 JPEG&sol;PNG 파일만 등록할 수 있습니다.
+              </p>
+            </div>
+          </div>
+          <div class="wrap_btn">
+            <!-- 버튼 비활성화(disabled 클래스 추가) -->
+            <a href="03_1_ask_1.html" class="btn_confirm btn_full b_blue disabled">문의하기</a>
+            <!-- 버튼 활성화(disabled 클래스 제거) -->
+            <!-- <a href="03_1_ask_1.html" class="btn_full b_blue">문의하기</a> -->
+          </div>
+        </div>
+      </main>
+      <a href="#none" id="btnTop">
+        <span class="ico_top ico_comm"></span>
+        <span class="sr_only">페이지 맨 위로 이동</span>
+      </a>
+    </div>
+    <!-- // mWrap -->
+  </body>
+</html>

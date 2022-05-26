@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="autocomplete" content="off" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>01_0 Main</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
+    <link href="./css/m_common.css" rel="stylesheet" />
+    <link href="./css/m_landscape.css" rel="stylesheet" media="all and (orientation:landscape)" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script src="./js/summernote-table.js"></script>
+    <script src="./js/m_main.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>모바일 고객센터</strong>
+      <p>페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를 비활성화하였습니다.</p>
+    </noscript>
+    <!-- mWrap -->
+    <div id="mWrap">
+      <h1><span class="sr_only">모바일 고객센터</span></h1>
+      <!-- m.header_type1 > 이전, 닫기 버튼 없는 상태(메인페이지에만 해당) -->
+      <header id="mHeader" class="m_header_type1">
+        <div class="inner_p">
+          <h2><a href="#none" class="tit_maintit">고객센터</a></h2>
+        </div>
+      </header>
+      <main id="mMain" class="m_main">
+        <h2><span class="sr_only">고객센터 메인페이지</span></h2>
+        <div class="inner_p">
+          <ul class="list_main">
+            <li>
+              <a href="02_1_0_faq.html" class="link_main">
+                <span class="tit_subtit">FAQ</span>
+                <span class="ico_arr_r ico_comm"></span>
+              </a>
+            </li>
+            <li>
+              <a href="03_2_1_ask_result.html" class="link_main">
+                <span class="tit_subtit">문의내역확인</span>
+                <span class="ico_arr_r ico_comm"></span>
+              </a>
+            </li>
+            <li>
+              <a href="05_1_0_policy.html" class="link_main">
+                <span class="tit_subtit">정책</span>
+                <span class="ico_arr_r ico_comm"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="link_main">
+                <span class="tit_subtit">공지</span>
+                <span class="ico_landing ico_comm"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#none" class="link_main">
+                <span class="tit_subtit">쿠폰</span>
+                <span class="ico_landing ico_comm"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <a href="#none" id="btnTop">
+        <span class="ico_top ico_comm"></span>
+        <span class="sr_only">페이지 맨 위로 이동</span>
+      </a>
+      <footer id="mFooter" class="m_footer">
+        <h2><span class="sr_only">푸터 영역</span></h2>
+        <div class="inner_footer">
+          <p class="txt_copyright">&copy; PLAYWITH GAMES Inc. All Rights Reserved</p>
+        </div>
+      </footer>
+    </div>
+    <!-- // mWrap -->
+  </body>
+</html>

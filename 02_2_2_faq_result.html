@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="autocomplete" content="off" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>02_2 FAQ 검색결과 없음</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet" />
+    <link href="./css/m_common.css" rel="stylesheet" />
+    <link href="./css/m_landscape.css" rel="stylesheet" media="all and (orientation:landscape)" />
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+    <script src="./js/summernote-table.js"></script>
+    <script src="./js/m_main.js"></script>
+  </head>
+  <body>
+    <noscript>
+      <strong>모바일 고객센터</strong>
+      <p>
+        페이지의 스크립트 유형을 지원하지 않거나, 브라우저가 스크립트를
+        비활성화하였습니다.
+      </p>
+    </noscript>
+
+    <!-- mWrap -->
+    <div id="mWrap">
+      <h1><span class="sr_only">모바일 고객센터</span></h1>
+      <!-- m.header_type2 > 이전, 닫기 버튼 있는 상태 -->
+      <header id="mHeader" class="m_header_type2">
+        <div class="inner_p">
+          <a href="#none" class="link_back">
+            <span class="ico_arr_l ico_comm"></span>
+            <span class="sr_only">이전 페이지</span>
+          </a>
+          <h2><span class="tit_maintit">FAQ</span></h2>
+          <a href="01_1_0_main.html" class="link_home">
+            <span class="ico_menu ico_comm"></span>
+            <span class="sr_only">홈으로 이동</span>
+          </a>
+        </div>
+      </header>
+      <main id="mMain" class="m_main">
+        <h2><span class="sr_only">고객센터 메인페이지</span></h2>
+        <h3><span class="sr_only">검색</span></h3>
+        <!-- .m_input_type1 > FAQ 검색창에만 해당 -->
+        <div class="m_input_type1">
+          <form class="wrap_form" role="search" action="#none">
+            <button type="button" class="btn_srch_type1">
+              <span class="ico_comm ico_srch"></span>
+              <span class="sr_only">찾기 버튼</span>
+            </button>
+            <input
+              type="search"
+              class="input_srch_type1"
+              placeholder="궁금한 내용을 입력해주세요."
+            />
+          </form>
+        </div>
+        <!-- // .m_input_type1 -->
+        <div class="inner_p">
+          <h3><span class="sr_only">검색 결과</span></h3>
+          <div class="wrap_result">
+            <!-- 검색 결과 노출 -->
+            <strong class="tit_result">
+              <span class="txt_bold">OOO</span>
+              <span class="txt_medium">검색결과 </span>
+              <span class="txt_medium txt_r">0건</span>
+            </strong>
+            <div class="cont_result_1">
+              <img src="./images/img_alert.png" class="img_alert" alt="" />
+              <p class="txt_result">검색결과가 없습니다.</p>
+            </div>
+          </div>
+          <!-- // 검색 결과 노출 -->
+        </div>
+      </main>
+      <a href="#none" id="btnTop">
+        <span class="ico_top ico_comm"></span>
+        <span class="sr_only">페이지 맨 위로 이동</span>
+      </a>
+    </div>
+    <!-- // mWrap -->
+  </body>
+</html>
